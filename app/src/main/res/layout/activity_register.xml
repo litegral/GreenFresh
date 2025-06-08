@@ -9,9 +9,9 @@
 
     <ImageView
         android:id="@+id/ivLogo"
-        android:layout_width="198dp"
-        android:layout_height="198dp"
-        android:layout_marginTop="121dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="80dp"
         android:src="@drawable/green_plant_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,84 +24,131 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_medium"
-        android:text="Register"
+        android:text="@string/register_button"
         android:textColor="@color/black"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
 
-    <EditText
-        android:id="@+id/etEmail"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEmail"
         android:layout_width="0dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="41dp"
-        android:background="@drawable/edit_text_background"
-        android:fontFamily="@font/poppins_medium"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:textColorHint="@color/grey_text"
-        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        app:startIconDrawable="@drawable/ic_email"
+        app:startIconTint="@color/grey_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvRegisterTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/tvRegisterTitle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-    <EditText
-        android:id="@+id/etPassword"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPassword"
         android:layout_width="0dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="41dp"
-        android:background="@drawable/edit_text_background"
-        android:fontFamily="@font/poppins_medium"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:textColorHint="@color/grey_text"
-        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:startIconDrawable="@drawable/ic_lock"
+        app:startIconTint="@color/grey_text"
+        app:passwordToggleEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/tilEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-    <EditText
-        android:id="@+id/etConfirmPassword"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilConfirmPassword"
         android:layout_width="0dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="41dp"
-        android:background="@drawable/edit_text_background"
-        android:fontFamily="@font/poppins_medium"
-        android:hint="Konfirmasi Password"
-        android:inputType="textPassword"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:textColorHint="@color/grey_text"
-        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:startIconDrawable="@drawable/ic_lock"
+        app:startIconTint="@color/grey_text"
+        app:passwordToggleEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/tilPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-    <androidx.appcompat.widget.AppCompatButton
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="@string/confirm_password_hint"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnRegister"
         android:layout_width="0dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginEnd="41dp"
-        android:layout_marginTop="37dp"
-        android:background="@drawable/btn_green_rounded"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/poppins_medium"
-        android:text="Register"
+        android:text="@string/register_button"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="16sp"
+        app:cornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etConfirmPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/tilConfirmPassword" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/have_account"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout> 

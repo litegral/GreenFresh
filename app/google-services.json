@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1046042736358",
+    "project_id": "greenfresh-app",
+    "storage_bucket": "greenfresh-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046042736358:android:eaf9719e226249d702ed27",
+        "android_client_info": {
+          "package_name": "com.litegral.greenfresh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046042736358-2vhab84gi9d6b47mnmivebulruuum0ku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.litegral.greenfresh",
+            "certificate_hash": "de0e1f9f6a802318c5ebd1198add09d3b69e5b85"
+          }
+        },
+        {
+          "client_id": "1046042736358-ahutkl26na0b5446pnugh3vnei35tp6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAstDfftnnN-x94qTWuSdpsradoy02sMmo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046042736358-0atg64ucplbehu90hjfo2svsnh6loqd6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

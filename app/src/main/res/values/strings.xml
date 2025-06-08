@@ -1,7 +1,18 @@
 <resources>
     <string name="app_name">GreenFresh</string>
-    <string name="welcome_text">Selamat Datang</string>
-    <string name="login_button">Login</string>
-    <string name="register_text">Belum punya akun? Register disini</string>
-    <string name="logo_description">Green Plant Logo</string>
+    <string name="welcome_text">Selamat Datang di GreenFresh</string>
+    <string name="login_button">Masuk</string>
+    <string name="register_text">Belum punya akun? Daftar disini</string>
+    <string name="logo_description">Logo Tanaman Hijau</string>
+    <string name="default_web_client_id">1046042736358-ahutkl26na0b5446pnugh3vnei35tp6b.apps.googleusercontent.com</string>
+    
+    <!-- New strings -->
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Kata Sandi</string>
+    <string name="confirm_password_hint">Konfirmasi Kata Sandi</string>
+    <string name="register_button">Daftar</string>
+    <string name="login_with_google">Masuk dengan Google</string>
+    <string name="have_account">Sudah punya akun? Masuk</string>
+    <string name="no_account">Belum punya akun? Daftar</string>
+    <string name="welcome_subtitle">Temukan tanaman tanaman unik dan menarik untuk halaman rumah Anda!</string>
 </resources>
