@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue_background"
+    tools:context=".LoginFormActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="198dp"
+        android:layout_height="198dp"
+        android:layout_marginTop="121dp"
+        android:src="@drawable/green_plant_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/logo_description" />
+
+    <TextView
+        android:id="@+id/tvLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="41dp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="@color/grey_text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLoginTitle" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="41dp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="@color/grey_text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLoginSubmit"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/btn_green_rounded"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout> 

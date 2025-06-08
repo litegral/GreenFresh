@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GreenFresh</string>
+    <string name="welcome_text">Selamat Datang</string>
+    <string name="login_button">Login</string>
+    <string name="register_text">Belum punya akun? Register disini</string>
+    <string name="logo_description">Green Plant Logo</string>
+</resources>
